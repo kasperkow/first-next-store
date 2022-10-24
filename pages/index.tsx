@@ -1,9 +1,11 @@
 import { Header } from '@components/Header'
 import { Footer } from '@components/Footer'
 import { Main } from '@components/Main'
-import { ProductLeft, ProductRight } from '@components/Product'
+import { ProductDetails } from '@components/Product'
 
 const DATA1 = {
+    id: 1,
+    title: 'Test 1',
     imgUrl: 'https://i.picsum.photos/id/537/500/300.jpg?hmac=pwDQHy5AfKC9cRzKJFqZ-2A40ExdclBcuGg8L_t0aWI',
     imgAlt: 'Galaxy lorem ipsum',
     rating: 4.5,
@@ -21,6 +23,8 @@ const DATA1 = {
         eu sodales eros. Vivamus efficitur turpis aliquet mollis fringilla.',
 }
 const DATA2 = {
+    id: 2,
+    title: 'Test 2',
     imgUrl: 'https://i.picsum.photos/id/305/500/300.jpg?hmac=OLcz1VBLWWeA1lXKNgREsngR7CyjghZrI5AJCW9azAg',
     imgAlt: 'Another lorem ipsum',
     rating: 3.7,
@@ -43,8 +47,8 @@ const Home = () => {
         <div className="flex flex-col min-h-screen">
             <Header />
             <Main>
-                <ProductLeft data={DATA1} />
-                <ProductRight data={DATA2} />
+                <ProductDetails data={DATA1} />
+                <ProductDetails data={DATA2} />
             </Main>
             <Footer />
         </div>
