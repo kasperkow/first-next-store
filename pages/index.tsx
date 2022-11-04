@@ -1,5 +1,3 @@
-import { Header } from '@components/Header'
-import { Footer } from '@components/Footer'
 import { Main } from '@components/Main'
 import { ProductDetails } from '@components/Product'
 
@@ -45,12 +43,10 @@ const DATA2 = {
 const Home = () => {
     return (
         <div className="flex flex-col min-h-screen">
-            <Header />
             <Main>
                 <ProductDetails data={DATA1} />
                 <ProductDetails data={DATA2} />
             </Main>
-            <Footer />
         </div>
     )
 }
