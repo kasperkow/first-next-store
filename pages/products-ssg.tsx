@@ -1,5 +1,5 @@
 import { InferGetStaticPropsType } from 'next'
-import { ProductDetails, ProductListItem } from '@components/Product'
+import { ProductListItem } from '@components/Product'
 
 const ProductPage = ({ data, data2 }: InferGetStaticPropsType<typeof getStaticProps>) => {
     return (
