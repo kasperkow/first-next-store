@@ -64,7 +64,13 @@ const Home: NextPage = () => {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-        <a onclick="window.open(document.URL, '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');">
+        <a onClick={() =>
+            window.open(
+              document.URL,
+              "_blank",
+              "location=yes,height=570,width=520,scrollbars=yes,status=yes"
+            )
+          }>
   Share Page
 </a>
       </footer>
